@@ -20,7 +20,6 @@ apply from: rootProject.file("configuration/publishing.gradle")
 dependencies {
     implementation project(':core')
     implementation dependency.androidx.appcompat
-    implementation dependency.androidx.multidex
     implementation dependency.gson
     implementation dependency.rxjava
     implementation dependency.rxandroid
@@ -39,6 +38,7 @@ dependencies {
     androidTestImplementation project(path: ':testutils')
     androidTestImplementation project(path: ':aws-api')
     androidTestImplementation dependency.androidx.annotation
+    androidTestImplementation dependency.androidx.multidex
     androidTestImplementation dependency.androidx.test.core
     androidTestImplementation dependency.androidx.test.runner
     androidTestImplementation dependency.androidx.test.junit
